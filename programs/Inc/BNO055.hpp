@@ -1,0 +1,51 @@
+/*
+ * BNO055.hpp
+ *
+ *  Created on: 2024/08/06
+ *      Author: sakur
+ */
+
+#ifndef INC_BNO055_HPP_
+#define INC_BNO055_HPP_
+
+#define BNO055_I2C_ADDR0 0x28
+//---------sys reset--------------------
+#define BNO055_SYS_TRGGER_ADDR 0x3F
+#define SYS_RESET 0x20
+//---------pwr mode-----------------------
+#define BNO055_PWR_MODE_ADDR 0X3E
+#define POWER_MODE_NORMAL 0X00
+#define POWER_MODE_LOWPOWER 0X01
+#define POWER_MODE_SUSPEND 0X02
+//---------opr mode---------------------
+#define BNO055_OPR_MODE_ADDR 0x3D
+#define OPERATION_MODE_CONFIG 0X00
+#define OPERATION_MODE_ACCONLY 0X01
+#define OPERATION_MODE_MAGONLY 0X02
+#define OPERATION_MODE_GYRONLY 0X03
+#define OPERATION_MODE_ACCMAG 0X04
+#define OPERATION_MODE_ACCGYRO 0X05
+#define OPERATION_MODE_MAGGYRO 0X06
+#define OPERATION_MODE_AMG 0X07
+#define OPERATION_MODE_IMUPLUS 0X08
+#define OPERATION_MODE_COMPASS 0X09
+#define OPERATION_MODE_M4G 0X0A
+#define OPERATION_MODE_NDOF_FMC_OFF 0X0B
+#define OPERATION_MODE_NDOF 0X0C
+//---------unit sel----------------------
+#define BNO055_UNIT_SEL_ADDR 0x80
+#define EULER_ANGLE_UNIT_MSK 0x04
+#define EULER_ANGLE_UNIT_DEG 0
+#define EULER_ANGLE_UNIT_RAD 1
+//---------euler data---------------------
+#define BNO055_EULER_H_LSB_ADDR 0X1A
+#define BNO055_EULER_H_MSB_ADDR 0X1B
+#define BNO055_EULER_R_LSB_ADDR 0X1C
+#define BNO055_EULER_R_MSB_ADDR 0X1D
+#define BNO055_EULER_P_LSB_ADDR 0X1E
+#define BNO055_EULER_P_MSB_ADDR 0X1F
+
+
+
+
+#endif /* INC_BNO055_HPP_ */
